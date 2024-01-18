@@ -2,33 +2,21 @@
   "pensamentos": [
     {
       "id": "1",
-      "conteudo": "Que bom que vc veio",
-      "autoria": "Nay",
+      "conteudo": "We are the champions my friends!!!",
+      "autoria": "Queen",
       "modelo": "modelo1"
     },
     {
       "id": "2",
-      "conteudo": "Estudando Angular",
-      "autoria": "Dev Alura",
+      "conteudo": "Na minha máquina funciona!",
+      "autoria": "Dev da madrugada",
       "modelo": "modelo2"
     },
     {
       "id": "3",
-      "conteudo": "Angular é o melhor'",
-      "autoria": "Dev Alura",
+      "conteudo": "Continue a codar... Continue a codar...",
+      "autoria": "Dory programadora",
       "modelo": "modelo3"
-    },
-    {
-      "id": "f559",
-      "conteudo": "Pensamento de teste",
-      "autoria": "Dev Angular",
-      "modelo": "modelo3"
-    },
-    {
-      "id": "ca7b",
-      "conteudo": "pensamento teste 2",
-      "autoria": "dev teste",
-      "modelo": "modelo2"
     }
   ]
 }
