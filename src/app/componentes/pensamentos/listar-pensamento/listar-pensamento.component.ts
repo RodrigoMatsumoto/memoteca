@@ -11,9 +11,10 @@ import { Pensamento } from '../pensamentos';
 export class ListarPensamentoComponent {
 
   listaPensamentos: Pensamento[] = [];
+  paginaAtual: number = 1;
 
   constructor(private service: PensamentoService) {
-    this.service.listar().subscribe((listaPensamentos) => {
+    this.service.listar(this.paginaAtual).subscribe((listaPensamentos) => {
       this.listaPensamentos = listaPensamentos;
     });
   }
