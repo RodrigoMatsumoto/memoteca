@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+
+import { PensamentoService } from '../pensamento.service';
 import { Pensamento } from '../pensamentos';
 
 @Component({
@@ -8,11 +10,16 @@ import { Pensamento } from '../pensamentos';
 })
 export class PensamentoComponent {
 
+  constructor(private service: PensamentoService) {
+
+  }
+
   @Input() pensamento: Pensamento = {
     id: '',
     conteudo: 'I love Angular',
     autoria: 'Nay',
-    modelo: 'modelo3'
+    modelo: 'modelo3',
+    favorito: false
   };
 
   larguraPensamento(): string {
@@ -22,4 +29,14 @@ export class PensamentoComponent {
     return 'pensamento-p';
   };
 
+  mudarIconeFavorito(): string {
+    if(!this.pensamento.favorito) {
+      return 'inativo';
+    }
+    return 'ativo';
+  }
+
+  atualizarFavorito() {
+    this.service.mudarFavorito(this.pensamento).subscribe();
+  }
 };
